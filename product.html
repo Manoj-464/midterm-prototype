@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-page</title>
+    <script src="https://kit.fontawesome.com/0a840aa4ab.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Skip Link -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <div class="content-container">
+    <header>
+    <div class="item-nav">
+    </div>
+    </header>
+    <main id="maincontent">
+        <div class="item-nav" role="navigation">
+            <a href="index.html" aria-label="Back to Home"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#" aria-label="Add to Favorites"><i class="fa-regular fa-heart"></i></a>
+        </div>
+    </main>
+    <article class="buogogiburgerdescrip">
+        <h2>Korean Bulgogi Burger</h2>
+        <p>A signature Korean Bulgogi patty</p>
+        <p>topped with Bulgogi seasoning</p>
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/bulgogiburger-600_x_444.png">
+            <source media="(max-width: 768px)" srcset="images/bulgogiburger-350_x_259.png">
+            <img src="images/bulgogiburger.webp" alt="product-bulgogi-burger-image">
+          </picture>
+    </article>
+    <div class="size-btn-container" role="group" aria-label="Select burger size">
+        <button class="size-btn" aria-label="Size small">S</button>
+        <button class="size-btnm" aria-label="Size medium">M</button>
+        <button class="size-btn" aria-label="Size large">L</button>
+    </div>
+    <img class="shadow" src="images/shadow.svg" alt="Decorative shadow">
+    <div class="item-number">
+        <button class="plusminus" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+        <p>2</p>
+        <button class="plusminus" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    
+    <footer class="productpage" role="contentinfo">
+        <div>
+            <p>Price</p>
+            <h4>$ 41.90</h4>
+        </div>
+        <div class="cart1">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="cart.html">Go to Cart</a>
+        </div>
+    </footer>
+    </div>>
+</body>
+
+</html>

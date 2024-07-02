@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/0a840aa4ab.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Skip Link -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <div class="content-container">
+    <main>
+        <!-- Cart Items -->
+    
+        <nav class="cart-nav" role="navigation">
+            <a href="product.html" aria-label="Back to products"><i class="fa-solid fa-chevron-left"></i></a>
+            <h2 id="maincontent">Cart</h2>
+            <button aria-label="More options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </nav>
+    <div class="cart-item1" role="region" aria-labelledby="cartitem1label">
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/big-burger-120_x_120.png">
+            <source media="(max-width: 768px)" srcset="images/big-burger-64_x_64.png">
+            <img src="images/bulgogiburger.webp" alt="K-Burger-image">
+          </picture>
+        <div class="cart-item1-info1">
+            <h4 id="cartitem1label">K-Burger</h4>
+            <div class="cart-item1-numb">
+                <button aria-label="Decrease quantity for K-Burger"><i class="fa-solid fa-minus"></i></button>
+                <p>2</p>
+                <button aria-label="Increase quantity for K-Burger"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="cart-item1-info2">
+            <button aria-label="Remove K-Burger from cart"><i class="fa-solid fa-x"></i></button>
+            <p>$41.90</p>
+        </div>
+    </div>
+
+    <div class="cart-item2" role="region" aria-labelledby="cartitem1label">
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/bulgogiburger-120_x_88.png">
+            <source media="(max-width: 768px)" srcset="images/bulgogiburger-64_x_47.png">
+            <img src="images/bulgogiburger.webp" alt="bulgogi-burger-image">
+          </picture>
+
+        <div class="cart-item2-info1">
+            <h4 id="cartitem2label">Bulgogi Burger</h4>
+            <div class="cart-item2-numb">
+                <button aria-label="Decrease quantity for Bulgogi-Burger"><i class="fa-solid fa-minus"></i></button>
+                <p>1</p>
+                <button aria-label="Increase quantity for Bulgogi-Burger"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="cart-item2-info2">
+            <button aria-label="Remove K-Burger from cart"><i class="fa-solid fa-x"></i></button>
+            <p>$20.95</p>
+        </div>
+    </div>
+
+    <!-- Coupon Section -->
+    <div class="coupon-section" role="region" aria-label="Coupon section">
+        <input type="checkbox" id="toggle-coupon" class="toggle-coupon" aria-hidden="true">
+        <label for="toggle-coupon" class="coupon-btn" aria-hidden="true">Apply Coupons →</label>
+        <div class="enter-coupon-code">
+            <div class="coupon-input-group">
+                <input type="text" placeholder="Enter your coupon code" aria-label="Coupon code">
+                <button aria-label="Apply coupon"><span class="apply-coupon-btn">Apply</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="checkout" role="region" aria-label="Order summary">
+        <div class="payment-cal">
+            <p>Item Total</p>
+            <p>Delivery Charge</p>
+            <p>Tax</p>
+        </div>
+        <div class="payment-amount">
+            <p>$62.85</p>
+            <p>$2.25</p>
+            <p>$0.25</p>
+        </div>
+    </section>
+
+    <div class="totalamount" role="region" aria-label="Total amount">
+        <h4>Total:</h4>
+        <p>$65.35</p>
+    </div>
+
+    <button class="payment" role="button" aria-label="Proceed to payment method">Proceed to payment method</button>
+</main>
+</div> 
+</body>   
+  
+</html>
